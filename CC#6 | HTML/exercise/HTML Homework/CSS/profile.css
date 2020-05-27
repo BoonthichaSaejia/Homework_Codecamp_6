@@ -1,0 +1,83 @@
+h1, h2, h3, h4, h5, h6, p, em,span{
+    font-family: 'Kanit', sans-serif;
+}
+
+h1{
+    color: #E76F51;
+    text-align: center;
+}
+h2{
+    color: #264653;
+}
+h3{
+    color: #2d9a8f;
+}
+.header{
+    background-color: #ccf1f1;
+    height: 150px;
+}
+.navBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #66635d;
+    height: 60px;
+    width: 100%;
+}
+.menu{
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+}
+.current{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 18px;
+    color:#f4cbcc;
+}
+.container1{
+    background-color: #fcfaef;
+    display: grid;
+    grid-template-columns: 10% 30% 50% 10%;
+}
+img{
+    padding-top: 20px;
+    display: block;
+    margin-left: 0px;
+    width: 260px;
+    height:auto;
+}
+.box2{
+    background-color: #eca3a6;
+}
+.profile{
+    padding-left:20px;
+    padding-right:20px;
+    font-size:20px;
+    color: #66635d;
+}
+.container2{
+    padding-top:20px;
+    background-color: #fcfaef;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+.subcon{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.hobby{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height:auto;
+}
+figcaption {
+    color:#eca3a6;
+    font-family: 'Kanit', sans-serif;
+    padding: 2px;
+    text-align: center;
+}
+
+

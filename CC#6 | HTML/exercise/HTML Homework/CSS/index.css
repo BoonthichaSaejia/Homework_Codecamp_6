@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6, p, em{
+    font-family: 'Kanit', sans-serif;
+}
+
+h1{
+    color: #E76F51;
+    text-align: center;
+}
+h2{
+    color: #264653;
+}
+h3{
+    color: #2d9a8f;
+}
+.header{
+    background-color: #ccf1f1;
+    height: 150px;
+}
+.navBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #66635d;
+    height: 60px;
+    width: 100%;
+}
+.menu{
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+}
+.container{
+    background-color: #fcfaef;
+    height: 530px;
+}
+img{
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+    height:auto;
+}

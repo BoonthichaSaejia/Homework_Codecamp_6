@@ -29,6 +29,12 @@ h3{
     text-align: center;
     padding: 18px;
 }
+.current{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 18px;
+    color:#f4cbcc;
+}
 .container{
     background-color: #fcfaef;
     height: 530px;

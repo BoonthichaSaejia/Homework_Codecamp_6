@@ -1,2 +1,0 @@
-This is .txt file for Lab 3 in CC#6 Git.
-I created it to practice how to use Git.

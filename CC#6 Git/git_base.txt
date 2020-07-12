@@ -1,0 +1,13 @@
+This is text for git flow.
+We are learning about git rebase.
+
+It was created on develop branch.
+And it will match with feature-9.
+
+add commit this for git feature-9 branch
+
+add text to add commit 2
+
+add text to add commit 3
+
+add text for commit in develop

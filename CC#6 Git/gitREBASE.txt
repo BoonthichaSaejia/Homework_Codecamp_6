@@ -7,3 +7,5 @@ This is for learning git rebase(feature-10 & feature-11)
 3rd line in feature-10
 
 4th line in feature-10
+
+5th line in feature-10

@@ -7,3 +7,5 @@ And it will match with feature-9.
 add commit this for git feature-9 branch
 
 add text to add commit 2
+
+add text to add commit 3

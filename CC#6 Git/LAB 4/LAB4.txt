@@ -1,0 +1,4 @@
+This is the another LAB4.txt for branch that only exist in branch feature-4.
+We learn how to use the shortcut.
+
+My name is Boonthicha Saejia.

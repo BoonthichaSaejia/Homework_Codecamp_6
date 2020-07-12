@@ -1,1 +1,4 @@
 This is testGit.txt in feature-8 branch.
+
+I want to try the difference between .md file and .txt file 
+The above sentence written in master branch.

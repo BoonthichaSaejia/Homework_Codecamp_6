@@ -11,3 +11,5 @@ add text to add commit 2
 add text to add commit 3
 
 add text for commit in develop
+
+add second line for commit in develop

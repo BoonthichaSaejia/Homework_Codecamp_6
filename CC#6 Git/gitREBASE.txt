@@ -2,9 +2,10 @@ This is for learning git rebase(feature-10 & feature-11)
 
 1st line in feature-11
 
-2nd line in feature-11
+2nd line in feature-10
 
-3rd line in feature-11
+3rd line in feature-10
 
-4th line in feature-11
+4th line in feature-10
 
+5th line in feature-10

@@ -4,5 +4,5 @@ This is for learning git rebase(feature-10 & feature-11)
 
 2nd line in feature-11
 
-3rd line in feature-11 after pushing
+3rd line in feature-11
 

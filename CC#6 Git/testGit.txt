@@ -3,3 +3,5 @@ This is testGit.txt in feature-8 branch.
 Don't lose you way with each passing day
 You come so far. Don't throw it away.
 Live believing, Dream are for weaving.
+I want to try the difference between .md file and .txt file 
+The above sentence written in master branch.

@@ -1,5 +1,4 @@
 This is for learning git rebase(feature-10 & feature-11)
 
-1st line in feature-10
+1st line in feature-11
 
-2nd line in feature-10

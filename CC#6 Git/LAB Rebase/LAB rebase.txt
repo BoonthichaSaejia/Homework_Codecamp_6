@@ -1,2 +1,2 @@
-This is for LAB git rebase (use only master and feature-12 branch).
+We use develop and feature-12 branch for this lab
 

@@ -13,3 +13,5 @@ add text to add commit 3
 add text for commit in develop
 
 add second line for commit in develop
+add commit this for git feature-9 branch
+add text to add commit 3

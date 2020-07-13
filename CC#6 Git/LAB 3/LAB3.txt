@@ -1,0 +1,4 @@
+This LAB3.txt is for Git flow.
+We learn about add, commit and push.
+
+My name is Boonthicha Saejia

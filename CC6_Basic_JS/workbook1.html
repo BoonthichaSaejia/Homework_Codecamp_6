@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 3 cores of front-end: html,css,js</title>
+    <style>
+        h2{
+            font-size: 3rem;
+            text-align: center;
+            color: blueviolet;
+            background-color: cornsilk;
+        }
+        body {
+            background-color: coral;
+            padding-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <input id="int1" type="text" placeholder="Text Color">
+    <input id="int2" type="text" placeholder="Background Color">
+    <button onclick="changeColor()">Change Color</button>
+    <h2>Codecamp Thailand</h2>
+</body>
+<script>
+    function changeColor(){
+        // alert("Change Color Function...")
+        let tcolor = document.querySelector("#int1").value
+        let bcolor = document.querySelector("#int2").value
+        // alert(tcolor)
+        // alert(bcolor)
+        document.querySelector("h2").style.color=tcolor
+        document.querySelector("h2").style.backgroundColor=bcolor
+        
+
+    }
+</script>
+</html>

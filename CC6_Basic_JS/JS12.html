@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b){
+            return a+b
+        }
+        sum(4,5)
+        console.log(sum(4,5))
+
+        //function agrument = default
+        function multiple(a,b=1){
+            return a*b
+        }
+        console.log(multiple(6,5))
+
+        function isEven(num){
+            let result= num%2===0 ? "even":"odd";
+            return result
+        }
+        console.log(isEven(9))
+        console.log(isEven(6))
+        console.log(isEven(5))
+    </script>
+</body>
+</html>

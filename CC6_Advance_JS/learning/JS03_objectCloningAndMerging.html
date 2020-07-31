@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={
+            name: "Boonthicah",
+            age: 20,
+            skill: "python"
+        }
+
+        let admin={}; //use dif ref from user
+        for (let key in user){
+            admin[key]=user[key]
+        }
+        user.name="Codecamp"
+        delete admin.age
+        console.log(admin)
+        console.log(user)
+
+        //Object.assign => use for copy object
+        let obj1={
+            name: "Jidapa",
+            age: 19,
+            skill: "Managing"
+        }
+        let obj2=Object.assign({},obj1)
+        console.log(obj2)
+
+        let ob1={
+            name:"Jirapas",
+            skill:"Singing"
+        }
+        let ob2={
+            name:"Piyakarn",
+            age:46
+        }
+        let ob3={
+            name:"Rangsit",
+            skill:"Electronic"
+        }
+        let ob4=Object.assign(ob1,ob2,ob3) 
+        //if objects have same key it will keep value from the lastet object
+        console.log(ob4)
+    </script>
+</body>
+</html>

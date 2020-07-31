@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1={};
+        let obj2={
+            name:"Boonthicha",
+            surname:"Saejia"
+        }
+        function isEmpty(obj){
+            for(let key in obj){
+                return false
+            }
+            return true
+        }
+        console.log(isEmpty(obj1))
+        console.log(isEmpty(obj2))
+    </script>
+</body>
+</html>

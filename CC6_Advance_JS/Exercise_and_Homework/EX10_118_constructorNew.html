@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculator(){
+            this.read = function(){
+                this.varA=Number(prompt("Enter 1st value"));
+                this.varB=Number(prompt("Enter 2nd value"));
+            };
+            
+            this.sum=function(){
+                return this.varA+this.varB
+            };
+            this.mul=function(){
+                return this.varA*this.varB
+            }
+        }
+
+    </script>
+</body>
+</html>

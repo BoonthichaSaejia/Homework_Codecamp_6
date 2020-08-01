@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //method = function in object
+        let user ={
+            name:"Boonthicha",
+            sayHi: function(){
+                console.log("Hi")
+            }
+        }
+        let user2={
+            name:"John",
+            age:20,
+            sayHello(){
+                console.log(this.name)
+            }
+        }
+        user.sayHi();
+        user2.sayHello();
+    </script>
+</body>
+</html>

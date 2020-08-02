@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ประกาศ array
+        let arr1= new Array;
+        let arr2=[];
+
+        //Methods for add/delete items
+        arr1.push(1,2,3,4,5);
+        arr1.pop() //1,2,3,4
+        arr1.shift() //2,3
+        arr1.unshift(7,8,9) //7,8,9,2,3
+        console.log(arr1)
+
+        //Method: arr.splice(startIndex,number) = ลบตำแหน่งที่อยู๋ตรงกลาง
+        let arr3=[1,2,3,4,5,6,7,8,9]
+        arr3.splice(3,4) //1,2,3,8,9
+        console.log(arr3)
+        //delete then add at the index you start deleting 
+        arr3.splice(0,2,11,12,13,14) //11,12,13,14,3,8,9
+        console.log(arr3)
+        //ใช้ตัวแปรรับค่าที่ลบไป
+        let removed1=arr3.splice(2,2) 
+        console.log(removed1) //13,14
+        console.log(arr3)     //11,12,3,8,9
+
+        //Method: arr.slice(startIndex,endIndex)
+        let arr4=[1,2,3,4,5,6,7,8,9]
+        console.log(arr4.slice(3,9)) //4,5,6,7,8,9
+        console.log(arr4)            //1,2,3,4,5,6,7,8,9 <- nothing happen to sliced array
+
+        //Method: arr.concat(array)
+        let arr5=[1,2,3]
+        arr5.concat([4,5,6])
+        console.log(arr5) //1,2,3
+        console.log(arr5.concat([4,5,6]))   //1,2,3,4,5,6
+        console.log(arr5.concat([4,5],[6])) //1,2,3,4,5,6
+        console.log(arr5.concat([4,5],6))   //1,2,3,4,5,6
+
+        //Method: arr.forEach(function(item, index,array)) = callback function
+        let arr6=["Mui","Moji","Max"]
+        arr6.forEach((item,index,array)=>{
+            console.log(`${item} is at index ${index} in ${array}`)
+        })
+
+        //Method: arr.find() and arr.findIndex() = callback function
+        //return just 1 value
+        let users=[
+            {id:1,name:"Boonthicha"},
+            {id:2,name:"Jidapa"},
+            {id:3,name:"Jirapas"}
+        ]
+        let user =users.find(item=>item.id==1)
+        console.log(user.name)
+
+        //Method: arr.filter() == like .find but can return many values
+        let filtered=[1,2,3,4].filter(function(x){
+            return x<2.5;
+        })
+        console.log(filtered)
+
+        //Method: arr.map()
+        let studentsList=["Mui","Moji","Max"]
+        let nameLength=studentsList.map(item=>item.length);
+        console.log(nameLength)
+        //let result=arr.map(function(item,index,array)){}
+
+        //Method: arr.sort() 
+        let arr7=[1,7,15,22,77]
+        console.log(arr7.sort()) //1, 15, 22, 7, 77
+        //arr.sort() can't sort number so we have to use compare function
+        function compareNumeric(a,b){
+            if (a>b) return 1;
+            if (a==b) return 0;
+            if (a<b) return -1;
+        }
+        arr7.sort(compareNumeric)
+        console.log(arr7) //1,7,15,22,77
+
+        //Method: arr.reverse()
+
+        //Method: arr.split() and arr.join()
+        let str1="Hello my name is mui"
+        let arr8=str1.split(" ")
+        console.log(arr8)
+        console.log(str1)
+
+        let str2=arr8.join(" ")
+        console.log(str2)
+        console.log(arr8)
+    </script>
+</body>
+</html>

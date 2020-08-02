@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Hello World"
+        //How to access characters
+        console.log(str[0]) //"H"
+        console.log(str.charAt(0)) //"H"
+
+        console.log(str[15]) //undefined
+        console.log(str.charAt(15)) //""
+
+        for (let char of str){
+            console.log(char);
+        } //3rd method for accessing characters
+
+        //String are immutable
+        str[0]="G" //error
+
+        //Method: .toLowerCase() and .toUpperCase()
+        //ต้องต่อหลัง str not object or array
+        console.log("hello world".toUpperCase()) //HELLO WORLD
+        console.log("HELLO WORLD".toLowerCase()) //hello world
+
+        //How to search for substring
+        //1st method
+        console.log(str.indexOf("Hello")) //0: found but show only first index
+        console.log(str.indexOf("hello")) //-1: not found
+        //2nd method: the first with position
+        console.log(str.indexOf("o")) //4: found first "o" at index[4]
+        console.log(str.indexOf("o",5)) //7: found first "o" after index[5] at index[7]
+        //3rd method: search from last charater
+        console.log(str.lastIndexOf("o")) //7
+        console.log(str.indexOf("o")) //4
+        console.log(str.lastIndexOf("lo")) //3
+
+        //How to check whether str has substring
+        //1st method: .slice(start,end)
+        console.log(str.slice(0,5)) //Hello
+        console.log(str.slice(3,8)) //lo Wo
+        console.log(str.slice(3)) //lo World: to the last character
+        console.log(str.slice(-5,-1)) //Worl
+        //2nd method: .substr(start,end) like 1st method but can't reverse
+
+        //How to get unicode
+        console.log("a".codePointAt(0)); //97
+        console.log("A".codePointAt(0)); //65
+        console.log("Z".codePointAt(0)); //90
+
+        console.log(String.fromCodePoint(97)); //a
+        console.log(String.fromCodePoint(65)); //A
+
+        //Method: .includes(substring)
+        console.log(str.includes("Hello")); //true
+        console.log(str.includes("Hello",4)); //false
+
+        //Method: .startsWith() and .endsWith
+        console.log(str.startsWith("World")); //false
+        console.log(str.endsWith("World")); //true
+
+    
+
+    </script>
+</body>
+</html>

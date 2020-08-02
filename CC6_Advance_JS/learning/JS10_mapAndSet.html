@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Set</title>
+</head>
+<body>
+    <script>
+        //Map like Object except their keys can be any type of data ไม่ใช่แค่ string like Object
+        //Method and Properties of Map
+        //new Map()          - create new Map
+        let map= new Map();
+        //map.set(key,value) - keep key and value
+        map.set("1","str1");
+        map.set(1,"num1");
+        map.set(true,"bool1")
+        //map.get(key)       - return value in key, if key isn't in Map, it will return undefined
+        console.log(map.get(1))   //num1
+        console.log(map.get("1")) //str1
+        //map.has(key)       - return true if there is that key
+        //map.delete(key)    - delete value in key
+        //map.clear()        - delete everything from Map
+        //map.size           - return size of Map
+        console.log(map.size); //3
+
+        //!!  We can't set array or object in Map directly.
+        //!! We have to put those array and object in some variable before set in Map
+    </script>
+</body>
+</html>

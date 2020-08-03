@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aclean(arr){
+            let unique=[];
+            for (let i=0;i<arr.length;i++){
+                if (i==0) unique.push(arr[i]);
+                for (let j=0;j<unique.length;j++){
+                    if (unique[j].length!=arr[i]){
+                        break;
+                    } else {
+                        let set1=new Set(unique[j])
+                        let set2=new Set(arr[i])
+                        if (union(set1,set2).length==set1.length){
+                            count++
+                        }
+
+                    } 
+                    
+                }
+
+            }
+
+        }
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+    </script>
+</body>
+</html>

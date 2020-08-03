@@ -26,6 +26,33 @@
 
         //!!  We can't set array or object in Map directly.
         //!! We have to put those array and object in some variable before set in Map
+
+        //map.keys() - return key that iterable
+        //map.values() - return value that iterable
+        //map.entries() - return entries that iterable [key,value]
+
+        let m= new Map()
+        m.set("cucumber",500)
+        m.set("tomatoes",350)
+        m.set("onion",50)
+
+        for (let vegetable of m.keys()){
+            console.log(vegetable) //cucumber, tomatoes, onion
+        }
+        for (let price of m.values()){
+            console.log(price)    //500,300,50
+        }
+        for (let lst of m.entries()){
+            console.log(lst)
+        }
+
+        m.forEach((value,key,map)=>{
+            console.log(`${key}: ${value}: ${map}`)
+        })
+
+        //Method: Object.entries(obj) - change object into map
+        //Method: Object.fromEntries(map) - change map into object
+
     </script>
 </body>
 </html>

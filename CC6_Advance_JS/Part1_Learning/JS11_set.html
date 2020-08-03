@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Set - keep only value
+        //new Set(iterable)
+        let arr1=[1,2,3,4,5,5,5,6,6]
+        let Zet = new Set(arr1)
+        console.log(Zet) //1,2,3,4,5,6 - ไม่เก็บข้อมูลซ้ำ
+        
+        //set.add(value)
+        let arr2=[9,9,10,10,11]
+        Zet.add(arr2)
+        console.log(Zet) //1,2,3,4,5,6,[9,9,10,10,11]
+        
+        //set.has(value)
+
+        //set.delete(value)
+        Zet.delete(1)
+        console.log(Zet) //2,3,4,5,6,[9,9,10,10,11]
+
+        //set.size
+        console.log(Zet.size)
+
+        //set.has()
+        console.log(Zet.has(5))
+        console.log(Zet.has(8))
+
+        //set.clear()
+        Zet.clear()
+        console.log(Zet) //{}
+
+        //we can use forEach and for...of with set
+        let arr3=[1,2,3,4,5,6,7,8,9,9,10,10]
+        let zet= new Set(arr3)
+        //zet.forEach((value1,value2,set)=>`$`) pass 2 value
+    </script>
+</body>
+</html>
